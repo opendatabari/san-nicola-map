@@ -87,18 +87,21 @@ html, body, #map {
 	<div id="map"></div>
 <div id="box">
 <h2>Info</h2>
+Realizzata da Simone Cortesi, Maurizio Napolitano, Chiara Ciociola, Paola Liliana Buttiglione, ...
+
+<h2>Colophon</h2>
 I dati sono stati prelevati da <a href="http://osm.org">OpenStreetMap</a>, la mappa rappresenta tutte le località, vie, piazze, esercizi
 commerciali in cui il nome sia riconducibile a San Nicola di Bari.
-<h2>Colophon</h2>
-Realizzata da Simone Cortesi, Maurizio Napolitano, Chiara Ciociola, Paola Liliana Buttiglione, ...
+
 </div>
 	<script type="text/javascript">
-			var cloudmadeUrl = 'http://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/997/256/{z}/{x}/{y}.png',
-			    cloudmadeAttribution = 'Map data &copy; 2011 OpenStreetMap contributors, Imagery &copy; 2011 CloudMade, Points &copy 2012 LINZ',
-			    cloudmade = L.tileLayer(cloudmadeUrl, { maxZoom: 17, attribution: cloudmadeAttribution }),
-			    latlng = L.latLng(37.79, 15.27);
+			var cloudmadeUrl = 'http://{s}.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.png',
+				subDomains = ['otile1','otile2','otile3','otile4'],
+			    cloudmadeAttribution = 'Map data &copy; 2013 <a href="http://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> and contributors, Imagery &copy; 2013 Mapquest',
+			    cloudmade = L.tileLayer(cloudmadeUrl, { maxZoom: 17, attribution: cloudmadeAttribution, subdomains: subDomains }),
+			    latlng = L.latLng(41.79, 15.27);
 
-			var map = L.map('map', { center: latlng, zoom: 3, layers: [cloudmade] });
+			var map = L.map('map', { center: latlng, zoom: 6, layers: [cloudmade] });
 
 			var markers = L.markerClusterGroup();
 
@@ -109,7 +112,7 @@ Realizzata da Simone Cortesi, Maurizio Napolitano, Chiara Ciociola, Paola Lilian
 			for (var i = 0; i < addressPoints.length; i++) {
 				var a = addressPoints[i];
 				var title = a[2];
-				var marker = L.marker(L.latLng(a[0], a[1]), { title: title });
+				var marker = L.marker(L.latLng(a[1], a[0]), { title: title });
 				marker.bindPopup(title);
 				markerList.push(marker);
 			}
