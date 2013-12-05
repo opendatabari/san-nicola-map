@@ -99,9 +99,9 @@ Realizzata da Realizzata da Simone Cortesi, Maurizio Napolitano, Michele Barbera
 				subDomains = ['otile1','otile2','otile3','otile4'],
 			    cloudmadeAttribution = 'Map data &copy; 2013 <a href="http://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> and contributors, Imagery &copy; 2013 Mapquest',
 			    cloudmade = L.tileLayer(cloudmadeUrl, { maxZoom: 17, attribution: cloudmadeAttribution, subdomains: subDomains }),
-			    latlng = L.latLng(41.79, 15.27);
+			    latlng = L.latLng(44.79, 12.27);
 
-			var map = L.map('map', { center: latlng, zoom: 6, layers: [cloudmade] });
+			var map = L.map('map', { center: latlng, zoom: 4, layers: [cloudmade] });
 
 			var markers = L.markerClusterGroup();
 
