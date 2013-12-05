@@ -3,8 +3,10 @@
 //[37.7825724, 15.2188840667, "27"],
 //[37.7788214833, 15.2211284667, "88"]
 var addressPoints = [
-[14.256765, 40.849080, "Chiesa di San Nicola a Nilo"],
-[8.705056, 40.393431, "Chiesa di San Nicola di Trullas"],
+[16.8401251955444,41.084726,"Stadio San Nicola"],
+[16.8701709811884,41.13031375,"Basilica San Nicola"],
+[14.256765,40.849080,"Chiesa di San Nicola a Nilo"],
+[8.705056,40.393431,"Chiesa di San Nicola di Trullas"],
 [13.5892477,37.2965231,"Poggetto di San Nicola"],
 [9.33149903792,46.123643088,"Chiesa di San Nicola"],
 [13.327868,42.4111898,"Convento di San Nicola"],
