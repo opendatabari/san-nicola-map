@@ -363,5 +363,10 @@ var addressPoints = [
 [12.6890384,48.2387693,"St. Nikolaus"],
 [12.6838084,48.2411424,"St. Nikolaus"],
 [14.0578682,46.8237272,"St. Nikolaus"],
-[9.4077514,47.8662274,"St. Nikolaus"]
+[9.4077514,47.8662274,"St. Nikolaus"],
+[10.3966771,43.7167843,"Chiesa di San Nicola"],
+[12.2362719,42.54277,"San Nicola"],
+[12.8440892,42.1571611,"Monumento a San Nicola"],
+[12.9552512,41.9744805,"Località San Nicola"],
+[12.9735367,41.8344942,"Chiesa di San Nicola"]
 ];
