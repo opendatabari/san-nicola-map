@@ -370,5 +370,6 @@ var addressPoints = [
 [12.2362719,42.54277,"San Nicola"],
 [12.8440892,42.1571611,"Monumento a San Nicola"],
 [12.9552512,41.9744805,"Località San Nicola"],
-[12.9735367,41.8344942,"Chiesa di San Nicola"]
+[12.9735367,41.8344942,"Chiesa di San Nicola"],
+[16.86888,41.12844,"Cattedrale di Bari"]
 ];
