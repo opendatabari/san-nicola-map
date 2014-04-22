@@ -68,11 +68,11 @@ html, body, #map {
 
 </script>
 
-	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css" />
+	<link rel="stylesheet" href="css/leaflet.css" />
 	 <!--[if lte IE 8]>
 	     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.ie.css" />
 	 <![endif]-->
-	<script src="http://cdn.leafletjs.com/leaflet-0.7/leaflet.js"></script>
+	<script src="js/leaflet.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="screen.css" />
 	<meta property="og:image" content="http://maps.cortesi.com/san-nicola-map/san-nicola.png" />
@@ -81,13 +81,13 @@ html, body, #map {
     <link rel="stylesheet" href="css/leaflet-search.min.css" />
 	<link rel="stylesheet" href="plugin/markercluster/MarkerCluster.css" />
 	<link rel="stylesheet" href="plugin/markercluster/MarkerCluster.Default.css" />
-	<link rel="stylesheet" href="http://norkart.github.io/Leaflet-MiniMap/Control.MiniMap.css"/>
-    <link rel="stylesheet" href="https://rawgithub.com/ebrelsford/Leaflet.loading/master/src/Control.Loading.css" />
-    <script src="https://rawgithub.com/ebrelsford/Leaflet.loading/master/src/Control.Loading.js"></script>
+	<link rel="stylesheet" href="css/Control.MiniMap.css"/>
+    <link rel="stylesheet" href="css/Control.Loading.css" />
+    <script src="js/Control.Loading.js"></script>
 	<!--[if lte IE 8]><link rel="stylesheet" href="plugin/markercluster/MarkerCluster.Default.ie.css" /><![endif]-->
 	<script src="plugin/markercluster/leaflet.markercluster-src.js"></script>
-	<script src="http://norkart.github.io/Leaflet-MiniMap/Control.MiniMap.js"></script>	
-	<script src="san-nicola-data.js"></script>
+	<script src="js/Control.MiniMap.js"></script>	
+	<script src="data/san-nicola-data.js"></script>
 
 </head>
 <body>
@@ -96,11 +96,11 @@ html, body, #map {
 <div id="box">
 <h2>San Nicola Worldwide</h2>
 <img style="float: right;margin: 5px;" src="images/sannicola.png"/>
-In questa mappa sono rappresentate le località, le vie, le piazze e gli esercizi commerciali dedicati a San Nicola. 
-I dati sono stati estratti da <a href="http://osm.org">OpenStreetMap</a> la mappa online libera, collaborativa e 'opendata'. 
+In questa mappa sono rappresentate le località, le vie, le piazze e gli esercizi commerciali dedicati a San Nicola.</br> 
+I <a href="data/sannicola_osm_data.csv">dati</a> sono stati estratti da <a href="http://osm.org">OpenStreetMap</a> la mappa online libera, collaborativa e 'opendata'. 
 
 <h2>Colophon</h2>
-Realizzata da Simone Cortesi, Maurizio Napolitano, Michele Barbera con Opendatabari.it 
+Realizzata da Simone Cortesi, Maurizio Napolitano, Michele Barbera con <a href="http://opendatabari.it">opendatabari.it</a>
 
 </div>
 	<script type="text/javascript">
@@ -121,7 +121,7 @@ Realizzata da Simone Cortesi, Maurizio Napolitano, Michele Barbera con Opendatab
 			}
 
 			var sannicolaIcon = L.icon({
-				iconUrl: 'sannicolamini.png',
+				iconUrl: 'images/sannicolamini.png',
 				iconSize:     [24,24], 
 				popupAnchor:  [1,1] 
 			});
